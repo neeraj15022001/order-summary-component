@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background: url('./images/pattern-background-desktop.svg') no-repeat
+        hsl(225, 100%, 94%);
+      background-size: cover;
+      background-position: center;
+    "
+    class="grid place-content-center h-screen bg-gray-300"
+  >
+    <!-- Card -->
+    <div class="w-96 bg-white rounded-2xl">
+      <!-- image -->
+      <div
+        style="
+          background: url('./images/illustration-hero.svg') no-repeat;
+          background-size: cover;
+          background-position: center;
+        "
+        class="h-44 w-full rounded-t-2xl"
+      ></div>
+      <!-- Content -->
+      <div class="p-12">
+        <!-- Heading -->
+        <h1 class="text-center font-bold text-gray-700 text-2xl mb-5">
+          Order Summary
+        </h1>
+        <!-- Description -->
+        <p class="text-gray-500 text-center mb-8">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <!-- Pricing -->
+        <div class="flex items-center justify-between mb-10">
+          <!-- Plan -->
+          <div class="flex items-center">
+            <!-- Music Icon -->
+            <img class="mr-4" src="./images/icon-music.svg" alt="music-icon" />
+            <!-- Plan Details -->
+            <div>
+              <p class="font-bold text-gray-700 font-bold">Annual Plan</p>
+              <p class="text-gray-500">$59.99/year</p>
+            </div>
+          </div>
+          <!-- Change Button -->
+          <a href="#" class="underline text-blue-800">Change</a>
+        </div>
+        <!-- Action Butons -->
+        <div class="grid">
+          <button
+            class="font-semibold bg-gradient-to-b from-blue-700 to-blue-800 text-white py-3 rounded-lg capitalize shadow-lg mb-6"
+          >
+            proceed to payment
+          </button>
+          <button class="capitalize font-semibold text-gray-500">
+            cancel order
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
